@@ -46,6 +46,18 @@ st.markdown("""
     background-color:white;
     box-shadow:0px 2px 10px rgba(0,0,0,0.1);
 }
+.footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: white;
+    color: #1f4e79;
+    text-align: center;
+    padding: 10px;
+    font-weight: 600;
+    border-top: 1px solid #e6e6e6;
+}
 </style>
 """, unsafe_allow_html=True)
 
@@ -128,3 +140,10 @@ if menu == "View Employees":
 
     except ClientError as e:
         st.error(f"Error fetching employees: {e}")
+
+# -------- FOOTER --------
+st.markdown("""
+    <div class="footer">
+        Made by SLK Dev Team with Intelligence 🚀
+    </div>
+""", unsafe_allow_html=True)

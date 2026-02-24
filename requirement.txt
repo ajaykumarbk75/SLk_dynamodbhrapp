@@ -1,4 +1,5 @@
 boto3
-botocore>=1.29.0
-streamlit>=1.0.0
+botocore
+streamlit
+
 
